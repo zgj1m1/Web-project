@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+body {
+  font-family: "Oswald", sans-serif;
+}
+li {
+  padding: 0 20px;
+}
+.bg-custom {
+  background-color: transparent;
+}
+.first-part-wrap {
+  height: 100vh;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.52),
+      rgba(0, 0, 0, 0.603)
+    ),
+    url(./images/indexbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.nav-link-custom {
+  color: white !important;
+  font-size: 14px !important;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.button-responsive {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.container-custom {
+  height: calc(100vh - 80px);
+  padding-left: 40px;
+}
+
+.button-custom {
+  background-color: transparent;
+  border: 3px solid #37af4b;
+  width: 140px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  transition: all 0.25s ease-in-out;
+}
+.button-custom:hover {
+  box-shadow: inset 140px 0 0 0 #37af4b;
+  transition: all 0.25s ease-in-out;
+  color: white;
+}
+.text-front-page {
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+h1 {
+  margin-top: 25vh;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.left {
+  margin-right: 15px;
+}
+.right {
+  margin-left: 15px;
+}
+.active {
+  border-bottom: 2.5px solid #37af4b;
+}
+
+.paragraph {
+  font-size: 16px;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+.u-margin-bottom-big {
+  margin-bottom: 40px;
+}
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 10;
+  outline-offset: 1rem;
+  transition: all 0.4s;
+}
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+.composition__photo:hover {
+  transform: scale(1.1) translateY(0.5rem);
+  outline: 0.7rem solid #37af4b;
+  z-index: 20;
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+.heading-secondary {
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: all 0.2s;
+  color: #37af4b;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.u-center-text {
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.btn-text {
+  color: #37af4b;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #37af4b;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.btn-text:hover {
+  background-color: #37af4b;
+  color: white;
+  transition: 0.5s;
+}
+.fanshop {
+  margin-top: 100px;
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.708)
+    ),
+    url(./images/bg.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.card-next-game:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px 5px #37af4b1e;
+  transition: 0.4s;
+}
+
+.next-game {
+  padding-top: 180px;
+}
+.card-next-game {
+  height: 430px;
+  width: 70%;
+  border: 1px solid black;
+  margin-left: 15%;
+  border-radius: 30px;
+  padding-top: 30px;
+  transition: 0.3s;
+}
+.img-vs {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+}
+.vs-text {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.next-game-text {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+.ekipi-text {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.text-info {
+  padding-top: 30px;
+  color: black !important;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.button-next-game {
+  color: black;
+  display: block;
+  margin: 0 auto;
+}
+.icon-text {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.icon {
+  padding-top: 110px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+span {
+  font-size: 16px;
+}
+
+.parent {
+  height: 800px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 3;
+  background-image: url(/images/slider1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div2 {
+  grid-area: 1 / 3 / 2 / 4;
+  background-image: url(./images/2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div3 {
+  grid-area: 1 / 4 / 2 / 6;
+  background-image: url(./images/3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div4 {
+  grid-area: 1 / 6 / 3 / 7;
+  background-image: url(./images/7.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div5 {
+  grid-area: 2 / 4 / 4 / 6;
+  background-image: url(./images/5.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div6 {
+  grid-area: 3 / 6 / 5 / 7;
+  background-image: url(./images/6.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div7 {
+  grid-area: 2 / 1 / 3 / 3;
+  background-image: url(./images/4.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div8 {
+  grid-area: 3 / 1 / 5 / 2;
+  background-image: url(./images/8.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div9 {
+  grid-area: 2 / 3 / 4 / 4;
+  background-image: url(./images/9.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div10 {
+  grid-area: 4 / 2 / 5 / 4;
+  background-image: url(./images/10.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div11 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-image: url(./images/11.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.div15 {
+  grid-area: 4 / 4 / 5 / 6;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+table,
+td,
+th {
+  border: 0.5px solid black;
+}
+table {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.home {
+  background-color: #37af4b;
+}
+.first-element {
+  border-top-left-radius: 10px;
+}
+
+.body-tickets {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.667),
+      rgba(0, 0, 0, 0.753)
+    ),
+    url(./images/tickets-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.calendar {
+  background-color: #393e46;
+  width: 90%;
+  height: 80vh;
+  position: absolute;
+  top: 10vh;
+  left: 5%;
+}
+.left-side-calendar {
+  background-color: #222831;
+  padding: 0;
+  padding-left: 0.5px;
+}
+.main-calendar {
+  background-color: #393e46;
+  padding: 0;
+}
+.tickets-side {
+  background-color: #222831;
+}
+.colapse {
+  display: block;
+  margin-right: auto;
+  height: 30px;
+}
+.season-title {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.month-name {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  text-align: left;
+  transition: 0.7s;
+  text-transform: uppercase;
+}
+.month-name:hover {
+  background-color: #51555c;
+  transition: 0.3;
+}
+.current {
+  background-color: #37af4b;
+}
+.line {
+  height: 1px;
+  width: 80%;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+}
+.first-button {
+  margin-top: 10px;
+}
+.days-calendar {
+  color: white;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+.date-button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  border: 0px;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.date-button:hover {
+  background-color: #51555c;
+  transition: 0.3s;
+}
+.current:hover {
+  background-color: #37af4b;
+}
+.tickets-right-side-title {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.img-custom {
+  height: 80px;
+  width: 80px;
+}
+.img-middle-text {
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.img-middle-text-second {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+}
+.text-ticket{
+  margin: 0;
+  margin-top:6px;
+  color: white;
+  text-transform: uppercase;
+  vertical-align: center;
+  
+}
+.icon-right-side-tickets{
+  height: 30px;
+  width: 30px;
+}
+.button-buy-tickets{
+  display: block;
+  margin: 0 auto;
+  margin-top:100px;
+}
+.body-checkout{
+  display: absolute;
+  height: 100vh;
+  width:100%;
+  background:linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.707),
+    rgba(0, 0, 0, 0.603)
+  ), url(./images/280397654_1422662508179293_7637514137873894500_n.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.square{
+  width: 70%;
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.90);
+  border-radius: 20px;
+  margin-top: calc(15vh - 60px);
+  margin-left:15%; 
+}
+.line-checkout{
+  height: 400px;
+  width: 0.5px;
+  display: block;
+  margin: 0 auto;
+  background-color: #222831;
+  border: 0px solid black;
+}
+.title-checkout{
+  font-size: 20px;
+  color: #393e46;
+  display: block;
+  text-align: center;
+}
+.input-checkout{
+  width: 100%;  
+  margin-bottom: 10px;
+  height: 30px;
+  border: 1px solid #51555cce;
+}
+.text-checkout{
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  padding-bottom:5px ;
+
+}
+.line-left{
+  border-left:1px solid black ;
+}
+.card-checkout{
+ width: 100%;
+ border: 1px solid #222831;
+ border-radius: 10px;
+}
+.image-card-checkout{
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.card-checkout-title{
+ text-align: center;
+ text-transform: uppercase;
+ padding: 0;
+ margin: 0;
+  
+}
+.description{
+  font-size:12px;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+
+}
+.price{
+  text-align: center;
+  padding: 10px 0px;
+  margin: 0;
+}
+.total-price{
+  font-size:25px;
+  margin-top: 10px;
+}
+.button-checkout{
+  width: 200px;
+  height: 35px;
+  border:2px solid #37af4b;
+  text-transform: uppercase;
+}
+.images-cards{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.image-card{
+  height: 20px;
+}
+
+
